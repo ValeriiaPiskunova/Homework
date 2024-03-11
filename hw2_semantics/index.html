@@ -10,10 +10,29 @@
   </head>
   <body>
     <header>
-      <h1>HTML5 Семантичні елементи</h1>
-    </header>
-    <main>
-      <section>
+      <section id="general">
+        <h1>HTML5 Семантичні елементи</h1>
+        <nav>
+          <ul>
+            <li><a href="#general">HTML5 Семантичні елементи</a></li>
+            <li><a href="#browsers">Підтримка браузерів</a></li>
+            <li>
+              <a href="#elements">Нові семантичні елементи в HTML5</a>
+            </li>
+            <li>
+              <a href="#section">HTML5 &lt;section&gt; елемент</a>
+            </li>
+            <li>
+              <a href="#article">HTML5 &lt;article&gt; елемент</a>
+            </li>
+            <li>
+              <a href="#header">HTML5 &lt;header&gt; елемент</a>
+            </li>
+            <li><a href="#footer">HTML5 &lt;footer> елемент</a></li>
+            <li><a href="#cv_iframe">CV iframe</a></li>
+            <li><a href="#video_iframe">YouTube video iframe</a></li>
+          </ul>
+        </nav>
         <p>
           Семантичний елемент чітко описує його значення як для
           браузера, так і для розробника.
@@ -29,7 +48,9 @@
           визначає його зміст.
         </p>
       </section>
-      <section>
+    </header>
+    <main>
+      <section id="browsers">
         <h2>Підтримка браузерів</h2>
 
         <img src="img/browser.jpg" alt="Фото браузерів" />
@@ -50,7 +71,7 @@
           >.
         </p>
       </section>
-      <section>
+      <section id="elements">
         <h2>Нові семантичні елементи в HTML5</h2>
         <p>
           HTML5 пропонує нові семантичні елементи для визначення
@@ -63,7 +84,7 @@
           <li>&lt;footer&gt;</li>
         </ul>
       </section>
-      <section>
+      <section id="section">
         <h2>HTML5 &lt;section&gt; елемент</h2>
         <p>Елемент &lt;section&gt; визначає розділ в документі.</p>
         <p>
@@ -80,7 +101,7 @@
           alt="Приклад використання тегу &lt;section&gt;"
         />
       </section>
-      <section>
+      <section id="article">
         <h2>HTML5 &lt;article&gt; елемент</h2>
         <p>
           Елемент &lt;article&gt; визначає незалежний, автономний
@@ -105,7 +126,7 @@
           alt="Приклад використання тегу &lt;article&gt;"
         />
       </section>
-      <section>
+      <section id="header">
         <h2>HTML5 &lt;header&gt; елемент</h2>
         <p>
           Елемент &lt;header&gt; задає заголовок для документа або
@@ -127,7 +148,7 @@
           alt="Приклад використання тегу &lt;header&gt;"
         />
       </section>
-      <section>
+      <section id="footer">
         <h2>HTML5 &lt;footer> елемент</h2>
         <p>
           Елемент &lt;footer&gt; вказує нижній колонтитул для
@@ -144,29 +165,28 @@
         </p>
         <img
           src="img/ex_footer.jpg"
-          alt="Приклад використання тегу &lt;header&gt;"
+          alt="Приклад використання тегу &lt;footer&gt;"
         />
       </section>
     </main>
     <footer>
-      <section>
+      <section id="cv_iframe">
         <h2>CV iframe</h2>
         <iframe
           src="https://valeriiapiskunova.github.io/Homework/hw1_cv/"
           title="Inline Frame of CV"
-          width="100%"
+          width="600"
           height="400"
         ></iframe>
       </section>
 
-      <section>
+      <section id="video_iframe">
         <h2>YouTube video iframe</h2>
         <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/dEBVe8Ij7JU?si=4Kotu-DV1sBD6lxd"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
