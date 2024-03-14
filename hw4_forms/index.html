@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Форма реєстрації користувача</title>
+  </head>
+  <body>
+    <header>
+      <h1>Форма реєстрації</h1>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <div>
+          <label for="full_name">Повне ім'я</label>
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <div>
+          <label for="repite_password">Повторіть пароль</label>
+          <input
+            type="password"
+            name="repite_password"
+            id="repite_password"
+            required
+          />
+        </div>
+        <fieldset>
+          <legend>Стать</legend>
+          <div>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="жіноча"
+              required
+            />
+            <label for="female">жіноча</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="чоловіча"
+            />
+            <label for="male">чоловіча</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="age">Вік</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            max="99"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="courses">Курс</label>
+          <select required name="courses" id="courses">
+            <option value="" disabled selected>
+              --Виберіть курс--
+            </option>
+            <option value="front_end">Front-End</option>
+            <option value="back_end">Back-End</option>
+            <option value="project_management">
+              Project Management
+            </option>
+            <option value="qa_manual">QA Manual</option>
+          </select>
+        </div>
+        <div>
+          <label for="address">Повна адреса</label>
+          <textarea
+            placeholder="Країна,регіон,місто/селище,вулиця"
+            name="address"
+            id="address"
+            cols="20"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            required
+          />
+          <label for="agreement"
+            >Я погоджуюсь з обробкою персональних данних</label
+          >
+        </div>
+
+        <div>
+          <button type="reset">Очистити форму</button>
+          <button type="submit">Зареєструватися</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
