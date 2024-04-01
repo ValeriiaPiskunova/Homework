@@ -1,0 +1,179 @@
+body {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+}
+
+.photography__heading {
+    font-family: Delius Unicase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45.07px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 120px 0 80px 0;
+}
+
+.photography__content--architectural {
+    display: grid;
+    width: 1170px;
+    margin: 0 auto;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "first second second"
+        "third third fourth"
+        "fivth six six";
+}
+
+.photography__content--life {
+    display: grid;
+    width: 1170px;
+    margin: 0 auto;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "first second second"
+        "third third fourth"
+        "third third fourth"
+        "fivth fivth six";
+}
+
+.photography__content--portrait {
+    display: grid;
+    width: 1170px;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "first second third"
+        "fourth second fivth"
+        "six seventh fivth"
+        "six eight eight"
+        "nine nine ten";
+}
+
+
+.photography__content :nth-child(1) {
+    grid-area: first;
+}
+
+.photography__content :nth-child(2) {
+    grid-area: second;
+}
+
+.photography__content :nth-child(3) {
+    grid-area: third;
+}
+
+.photography__content :nth-child(4) {
+    grid-area: fourth;
+}
+
+.photography__content :nth-child(5) {
+    grid-area: fivth;
+}
+
+.photography__content :nth-child(6) {
+    grid-area: six;
+}
+
+.photography__content :nth-child(7) {
+    grid-area: seventh;
+}
+
+.photography__content :nth-child(8) {
+    grid-area: eight;
+}
+
+.photography__content :nth-child(9) {
+    grid-area: nine;
+}
+
+.photography__content :nth-child(10) {
+    grid-area: ten;
+}
+
+.photography__element {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.photography__element::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg,
+            #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%,
+            rgba(187, 186, 192, 0.26) 62.5%);
+}
+
+.photography__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 1;
+}
+
+.photography__text>span {
+    padding: 20px;
+}
+
+.photography__text--autor-name {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+}
+
+.photography__element:hover:after {
+    box-shadow: 0px 0px 30px 0px #00000080;
+    background: linear-gradient(360deg,
+            #241F24 1.04%,
+            rgba(91, 91, 91, 0.26) 6.99%,
+            rgba(187, 186, 192, 0) 12.29%);
+}
+
+.photography__element:hover img {
+    scale: 1.15;
+    transition: all .1s ease-in;
+}
+
+.photography__icons {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    top: 0;
+    opacity: 0;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.photography__element:hover .photography__icons {
+    z-index: 2;
+    opacity: 1;
+}
+
+.icon:hover {
+    background-color: #E0E0E0;
+}
