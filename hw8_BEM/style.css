@@ -1,0 +1,283 @@
+body {
+    font-family: "Lato";
+    width: 100%;
+}
+
+.content-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+}
+
+.nav__list-item>a:hover {
+    color: #18B5DC;
+}
+
+.header {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.header .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+}
+
+.header__nav {
+    width: 417px;
+    margin-left: -40px;
+}
+
+.header__list-item>a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3C3C3C;
+}
+
+.header__button {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #3C3C3C;
+    color: #3C3C3C;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__button:hover {
+    background-color: #18B5DC;
+    color: #FFFFFF;
+    border: none;
+}
+
+.content {
+    height: 833px;
+    background-color: #F6F6F6;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    letter-spacing: 0.13em;
+    color: #3C3C3C;
+    text-align: center;
+    margin: 0;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #DDDBDB;
+    opacity: 1;
+    width: 45px;
+    margin: 13px auto 0 auto;
+}
+
+.content__text {
+    padding-top: 150px;
+}
+
+.content__text>p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #3C3C3C;
+    text-align: center;
+    margin: 40px 0 0 0;
+    letter-spacing: 0.15px;
+}
+
+.content__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #282528;
+    margin: 0;
+}
+
+.card__role {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.6px;
+    color: #646464;
+    margin: 0;
+}
+
+.card__photo {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 19PX;
+}
+
+.card__icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    padding: 2px;
+    z-index: 1;
+}
+
+.icon--twitter {
+    background: url("img/twitter_h.svg") no-repeat;
+}
+
+.icon--twitter:hover {
+    background: url("img/twitter.svg") no-repeat;
+}
+
+.icon--facebook {
+    background: url("img/facebook_h.svg") no-repeat;
+}
+
+.icon--facebook:hover {
+    background: url("img/facebook.svg") no-repeat;
+}
+
+.icon--instagram {
+    background: url("img/instagram_h.svg") no-repeat;
+}
+
+.icon--instagram:hover {
+    background: url("img/instagram.svg") no-repeat;
+}
+
+
+.card__photo--first {
+    position: relative;
+    background: url("img/no-user-image-icon.webp");
+    background-size: cover;
+}
+
+.card__photo--second {
+    position: relative;
+    background: url("img/second_card.jpg");
+}
+
+.card__photo--third {
+    position: relative;
+    background: url("img/third_card.jpg");
+}
+
+.card__photo--fourth {
+    position: relative;
+    background: url("img/fourht_card.jpg");
+}
+
+.card__photo:hover .card__icons {
+    background-color: #18B5DC;
+    opacity: 1;
+    z-index: 2;
+}
+
+.footer .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+}
+
+.footer__logo {
+    margin-top: 38px;
+}
+
+.footer__nav {
+    margin: 11px 0;
+    width: 384px;
+}
+
+.footer__list-item>a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #3C3C3C;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.footer__social>div {
+    width: 42px;
+    height: 42px;
+}
+
+.footer__social--twitter {
+    background-image: url("img/twitter.svg");
+}
+
+.footer__social--twitter:hover {
+    background-image: url("img/twitter_fh.svg");
+}
+
+.footer__social--facebook {
+    background-image: url("img/facebook.svg");
+}
+
+.footer__social--facebook:hover {
+    background-image: url("img/facebook_fh.svg");
+}
+
+.footer__social--instagram {
+    background-image: url("img/instagram.svg");
+}
+
+.footer__social--instagram:hover {
+    background-image: url("img/instagram_fh.svg");
+}
+
+.footer__social--linkedin {
+    background-image: url("img/linkedin.svg");
+}
+
+.footer__social--linkedin:hover {
+    background-image: url("img/linkedin_fh.svg");
+}
+
+.footer__social--telegram {
+    background-image: url("img/telegram.svg");
+}
+
+.footer__social--telegram:hover {
+    background-image: url("img/telegram_fh.svg");
+}
