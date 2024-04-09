@@ -1,0 +1,46 @@
+.team__info-photo {
+    margin-top: 65px;
+    width: 430px;
+    height: 430px;
+
+    &--wrapper {
+        position: relative;
+        &::before,
+        &::after {
+            @extend %container-size;
+            bottom: 0;
+            border-bottom: 1px solid $base-color;
+        }
+
+        &::before {
+            @include border-position(left);
+        }
+
+        &::after {
+            @include border-position(right);
+        }
+    }
+
+    &--inner {
+        padding: 15px;
+
+        &::before,
+        &::after {
+            @extend %container-size;
+            top: 0;
+            border-top: 1px solid $base-color;
+        }
+
+        &::before {
+            @include border-position(left);
+        }
+
+        &::after {
+            @include border-position(right);
+        }
+
+        img {
+            display: block;
+        }
+    }
+}

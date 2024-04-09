@@ -1,0 +1,16 @@
+$base-color: #FFCC00;
+$text-color: #666;
+
+
+$line-width: 100px;
+%container-size {
+    content: "";
+    position: absolute;
+    width: $line-width;
+    height: $line-width;
+}
+
+@mixin border-position($position) {
+    border-#{$position}: 1px solid $base-color ;
+    #{$position}: 0;
+}
