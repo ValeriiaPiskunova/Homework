@@ -1,0 +1,47 @@
+.card-animation {
+        .card__inner {
+        animation: flip-left 2s linear, flip-down 2s ease 2s, flip-right 2s ease-in 4s,flip-up 2s ease-in-out 6s, flip-left 2s linear 8s,flip-down 2s ease 10s, flip-up 2s ease-in-out 12s;
+    }
+}
+
+@keyframes flip-left {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes flip-down {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes flip-right {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes flip-up {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(180deg);
+    }
+}
+
+
+
+
+
+

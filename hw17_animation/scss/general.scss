@@ -1,0 +1,24 @@
+body{
+    width: 100%;
+    font-family: "Playfair Display";
+}
+main{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 50px 30px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+.card__back{
+ img {
+    width: 30px;
+    height: 30px;}
+}
+p {
+    margin: 0 10px;
+}
