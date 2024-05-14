@@ -1,0 +1,115 @@
+.why-us {
+  background-image: url("../img/fullHD/why-us-bg.webp");
+  @include bg-options;
+  max-height: 704px;
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--left {
+      max-width: 648px;
+      height: 46%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        @include heading-large;
+        text-align: left;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    &--right {
+      margin-right: 112px;
+      max-width: 424px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      :nth-child(2) {
+        align-self: flex-end;
+      }
+      picture {
+        max-height: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .why-us {
+    background-image: url("../img/HD/why-us-bg.webp");
+    max-height: 704px;
+
+    &__item {
+      &--left {
+        max-width: 558px;
+      }
+      &--right {
+        max-width: 461px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-us {
+    background-image: url("../img/dekstop/why-us-bg.webp");
+
+    &__item {
+      &--left {
+        max-width: 550px;
+      }
+      &--right {
+        width: 386px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .why-us {
+    background-image: url("../img/tablet/why-us-bg.webp");
+    max-height: 659px;
+
+    &__item {
+      padding: 60px 0;
+      flex-flow: column-reverse;
+      align-items: start;
+      justify-content: flex-end;
+      &--left {
+        margin-top: 25px;
+        max-width: 720px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+      }
+      &--right {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .why-us {
+    background-image: url("../img/phone/why-us-bg.webp");
+    max-height: 630px;
+
+    &__item {
+      height: unset;
+    }
+    p {
+      margin: 21px 0px 24px 0;
+    }
+  }
+}

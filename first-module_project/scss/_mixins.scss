@@ -1,0 +1,37 @@
+@mixin general-position {
+  height: 100%;
+  margin: 0 auto;
+}
+@mixin bg-options {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+@mixin btn-style {
+  border: none;
+  background-color: $accent;
+  color: white;
+  font-family: Aleo;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin btn-hover {
+  background-color: $accent-darker;
+  color: $dark-grey;
+}
+@mixin heading-large {
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: normal;
+}
+@mixin text-w-h {
+  font-weight: 400;
+  line-height: 20px;
+}

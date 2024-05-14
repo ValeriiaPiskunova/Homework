@@ -1,0 +1,120 @@
+.book-item {
+  max-height: 684px;
+  @include bg-options;
+
+  &--first {
+    background-image: url("../img/fullHD/book-first.webp");
+  }
+  &--second {
+    background-image: url("../img/fullHD/book-second.webp");
+  }
+
+  &__text {
+    width: 49%;
+    position: relative;
+    top: 32.5%;
+    max-height: 344px;
+    background: #232323e5;
+
+    &--right {
+      float: right;
+    }
+
+    &-container {
+      padding: 44px 32px;
+      span {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        margin: 16px 0;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .book-item {
+    max-height: 712px;
+
+    &--first {
+      background-image: url("../img/HD/book-first.webp");
+    }
+    &--second {
+      background-image: url("../img/HD/book-second.webp");
+    }
+
+    &__text {
+      top: 31.5%;
+      max-height: 372px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .book-item {
+    max-height: 712px;
+
+    &--first {
+      background-image: url("../img/dekstop/book-first.webp");
+    }
+    &--second {
+      background-image: url("../img/dekstop/book-second.webp");
+    }
+
+    &__text {
+      top: 31%;
+      width: 57.5%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .book-item {
+    max-height: 588px;
+
+    &--first {
+      background-image: url("../img/tablet/book-first.webp");
+    }
+    &--second {
+      background-image: url("../img/tablet/book-second.webp");
+    }
+
+    &__text {
+      width: 100%;
+      top: 120px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .book-item {
+    max-height: 616px;
+
+    &--first {
+      background-image: url("../img/phone/book-first.webp");
+    }
+    &--second {
+      background-image: url("../img/phone/book-second.webp");
+    }
+
+    &__text {
+      top: 120px;
+    }
+    button {
+      margin-top: 14px;
+    }
+  }
+}

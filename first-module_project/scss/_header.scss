@@ -1,0 +1,110 @@
+.header {
+  background-image: url("../img/fullHD/header-bg.webp");
+  @include bg-options;
+  max-height: 862px;
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 52px;
+      text-transform: uppercase;
+      margin: -81px 0 0 0;
+    }
+
+    strong {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.31em;
+      margin: 8px 0 48px 0;
+    }
+  }
+}
+
+.header__search {
+  max-width: 647px;
+  width: 100%;
+
+  &-container {
+    display: flex;
+    height: 60px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      border: none;
+      width: 139px;
+      height: calc(100% - 8px);
+      margin: 4px 5px 4px 0;
+      @include btn-style;
+      font-size: 14px;
+      i {
+        margin-right: 12px;
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      height: 100%;
+      min-width: 277px;
+      width: calc(100% - 144px);
+      margin-left: 36px;
+      padding: 0;
+    }
+  }
+}
+
+.header__scroll {
+  position: absolute;
+  left: 46%;
+  bottom: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--text {
+    font-size: 14px;
+    @include text-w-h;
+    letter-spacing: 0.2em;
+    color: white;
+  }
+  &--img {
+    width: 14px;
+    height: 16px;
+    fill: white;
+  }
+}
+
+.header {
+  @media (max-width: 1360px) {
+    background-image: url("../img/HD/header-bg.webp");
+  }
+  @media (max-width: 1024px) {
+    background-image: url("../img/dekstop/header-bg.webp");
+    h1 {
+      margin: -77px 0 0 0;
+    }
+    .header__scroll {
+      left: 45%;
+    }
+  }
+  @media (max-width: 768px) {
+    background-image: url("../img/tablet/header-bg.webp");
+    .header__scroll {
+      left: 43%;
+    }
+  }
+  @media (max-width: 576px) {
+    background-image: url("../img/phone/header-bg.webp");
+    .header__scroll {
+      left: 40%;
+    }
+  }
+}

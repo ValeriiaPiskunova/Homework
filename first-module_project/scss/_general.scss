@@ -1,0 +1,56 @@
+body {
+  width: 100%;
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: white;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 1320px;
+  @include general-position;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.btn--large {
+  width: 213px;
+  height: 60px;
+  @include btn-style;
+}
+
+.btn {
+  &:hover {
+    @include btn-hover;
+  }
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.content-wrapper {
+  @media (max-width: 1360px) {
+    max-width: 1140px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  @media (max-width: 576px) {
+    max-width: 540px;
+  }
+}

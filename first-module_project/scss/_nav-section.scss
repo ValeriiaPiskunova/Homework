@@ -1,0 +1,141 @@
+.nav {
+  background-color: $accent;
+  height: 100%;
+  max-height: 84px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+
+    &__logo {
+      margin-top: 8px;
+    }
+
+    .navbar {
+      width: 100%;
+      max-width: 575px;
+      margin: 32px 0;
+
+      .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        a {
+          font-family: Aleo;
+          color: white;
+          font-size: 14px;
+          @include text-w-h;
+          text-transform: uppercase;
+          &:hover {
+            border-bottom: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 26px;
+  &.active {
+    width: 30px;
+    height: 32px;
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 12px;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  &:before {
+    top: 0px;
+  }
+  &:after {
+    bottom: 0;
+  }
+
+  &.active span {
+    opacity: 0;
+  }
+
+  &.active:before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  &.active:after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    max-height: 136px;
+    padding: 32px 0;
+
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-height: 72px;
+      .navbar {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    position: relative;
+    height: 84px;
+    padding: 0;
+
+    &__items {
+      justify-content: flex-end;
+      max-height: 84px;
+    }
+    .burger {
+      display: block;
+      margin-left: 146px;
+    }
+    .navbar {
+      display: none;
+      height: 216px;
+      width: 100%;
+      background-color: $accent;
+      &.open {
+        display: flex;
+        padding: 24px 0;
+        margin: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+      }
+    }
+    &-menu {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
