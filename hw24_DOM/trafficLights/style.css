@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.traffic-lights {
+    margin-top: 100px;
+    width: 150px;
+    height: 350px;
+    background-color: black;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lights {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.red.on {
+    background-color: red;
+}
+
+.yellow.on {
+    background-color: yellow;
+}
+
+.green.on {
+    background-color: green;
+}
+
+button {
+    margin-top: 50px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    color: white;
+    background-color: black;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
