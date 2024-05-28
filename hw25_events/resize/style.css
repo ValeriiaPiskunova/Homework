@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resize {
+    width: 400px;
+    height: 250px;
+    border: 1px solid lightseagreen;
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.corner {
+    cursor: nw-resize;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
