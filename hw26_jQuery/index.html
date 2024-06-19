@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <title>onWave</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <svg class="header__logo">
+                    <use xlink:href="./img/svg/sprite.svg#logo-color"></use>
+                </svg>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item interactive">Home</li>
+                        <li class="nav__item interactive">Catalog</li>
+                        <li class="nav__item interactive">News</li>
+                        <li class="nav__item interactive">Contacts</li>
+                    </ul>
+                </nav>
+
+                <div class="header__icons">
+                    <svg class="header__search">
+                        <use xlink:href="./img/svg/sprite.svg#search-icon"></use>
+                    </svg>
+                    <svg class="header__profile">
+                        <use xlink:href="./img/svg/sprite.svg#profile-icon"></use>
+                    </svg>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slider__item">
+                    <div class="container">
+                        <div class="hero-slider__cta cta">
+                            <h1 class="cta__heading">discover new options</h1>
+                            <button class="cta__btn interactive">View more</button>
+                        </div>
+                    </div>
+                    <img data-lazy="img/dekstop-hero-1.png" src="img/dekstop-hero-1.png" alt="">
+
+                </div>
+                <div class="hero-slider__item">
+                    <div class="container">
+                        <div class="hero-slider__cta cta">
+                            <h1 class="cta__heading">expand your horizons</h1>
+                            <button class="cta__btn interactive">View more</button>
+                        </div>
+                    </div>
+                    <img data-lazy="img/dekstop-hero-2.png" src="img/dekstop-hero-2.png" alt="">
+
+                </div>
+                <div class="hero-slider__item">
+                    <div class="hero-slider__cta cta">
+                        <h1 class="cta__heading">Find your own style</h1>
+                        <button class="cta__btn interactive">View more</button>
+                    </div>
+                    <img data-lazy="img/dekstop-hero-3.png" src="img/dekstop-hero-3.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="arrivals">
+            <div class="container">
+                <div class="arrivals__content">
+                    <h2 class="arrivals__title">new arrivals</h2>
+                    <div class="arrivals__container">
+                        <button class="arrivals-slider__prev"></button>
+                        <div class="arrivals-slider">
+                            <ul class="arrivals-slider__list"></ul>
+                        </div>
+                        <button class="arrivals-slider__next"></button>
+                    </div>
+                    <button class="arrivals__btn interactive">View more</button>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <div class="partners__content">
+                    <h2 class="partners__title">our partners</h2>
+                    <button class="partners-slider__prev"></button>
+                    <div class="partners-slider">
+                        <ul class="partners-slider__list"></ul>
+                    </div>
+                    <button class="partners-slider__next"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__info">
+                    <svg class="footer__logo">
+                        <use xlink:href="./img/svg/sprite.svg#logo-white"></use>
+                    </svg>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list nav-list">
+                            <li class="nav-list__item">Home</li>
+                            <li class="nav-list__item">Catalog</li>
+                            <li class="nav-list__item">News</li>
+                            <li class="nav-list__item">Contacts</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__contacts">
+                    <h3 class="footer__contacts-text">Contact Us</h3>
+                    <div class="footer__social">
+                        <svg class="footer__icon">
+                            <use xlink:href="./img/svg/sprite.svg#instagram"></use>
+                        </svg>
+                        <svg class="footer__icon">
+                            <use xlink:href="./img/svg/sprite.svg#facebook"></use>
+                        </svg>
+                        <svg class="footer__icon">
+                            <use xlink:href="./img/svg/sprite.svg#pinterest"></use>
+                        </svg>
+                        <svg class="footer__icon">
+                            <use xlink:href="./img/svg/sprite.svg#twitter"></use>
+                        </svg>
+                        <svg class="footer__icon">
+                            <use xlink:href="./img/svg/sprite.svg#youtube"></use>
+                        </svg>
+                    </div>
+                    <p class="footer__contacts-text">0800 300 4040</p>
+                </div>
+            </div>
+            <p class="footer__copyright">© Copyright 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>

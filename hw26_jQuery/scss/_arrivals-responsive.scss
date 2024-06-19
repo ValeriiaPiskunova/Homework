@@ -1,0 +1,76 @@
+.arrivals {
+  @media (max-width: 1024px) {
+    &__title {
+      @include heading-large-responsive;
+    }
+
+    &-slider {
+      margin: 0 auto;
+
+      &__prev {
+        left: 10px;
+        top: 50%;
+        @include arrows-responsive;
+      }
+
+      &__next {
+        right: 10px;
+        top: 50%;
+        @include arrows-responsive;
+      }
+    }
+
+    &__btn {
+      @include btn-style-responsive;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &-slider {
+      margin: 0 auto;
+
+      &__item {
+        width: 100%;
+        max-width: 256px;
+      }
+
+      &__prev {
+        display: none !important;
+      }
+
+      &__next {
+        display: none !important;
+      }
+    }
+
+    &-dots {
+      bottom: -9% !important;
+    }
+  }
+}
+
+.arrivals-dots {
+  display: flex;
+  gap: 12px;
+  bottom: 0;
+  @include positionX-center;
+  padding-left: 0;
+}
+
+.arrivals-dots li {
+  position: relative;
+}
+
+.arrivals-dots li button {
+  @include btn-invisible;
+}
+
+.arrivals-dots li button::before {
+  @include dots-style;
+  background: #cac2ba;
+}
+
+.arrivals-dots li.slick-active button::before {
+  background: $tomato-light;
+}

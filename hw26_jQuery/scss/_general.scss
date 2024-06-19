@@ -1,0 +1,34 @@
+body {
+  width: 100%;
+  font-family: "Montserrat";
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    max-width: 768px;
+  }
+  @media (max-width: 500px) {
+    max-width: 480px;
+  }
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav__item {
+  @include nav-text-size;
+}
+
+.hover {
+  background: $tomato-light !important;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: url("../img/svg/cursor.svg"), auto;
+}

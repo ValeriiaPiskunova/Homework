@@ -1,0 +1,94 @@
+@mixin heading-largest {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.95px;
+  text-transform: uppercase;
+}
+
+@mixin heading-large {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin heading-large-responsive {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+}
+
+@mixin nav-text-size {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+}
+
+@mixin nav-text-responsive {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+@mixin btn-style {
+  width: 227px;
+  height: 50px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  text-transform: uppercase;
+}
+
+@mixin btn-style-responsive {
+  width: 154px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+@mixin arrows {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  width: 40px;
+}
+
+@mixin arrows-responsive {
+  width: 16px;
+  height: 30px;
+}
+
+@mixin arrivals-arrows {
+  @include arrows;
+  height: 74px;
+  top: 40%;
+}
+
+@mixin partners-arrows {
+  @include arrows;
+  height: 72px;
+  top: 50%;
+}
+
+@mixin positionX-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin btn-invisible {
+  color: transparent;
+  background: transparent;
+  border: none;
+}
+
+@mixin dots-style {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $dot-inactive;
+}

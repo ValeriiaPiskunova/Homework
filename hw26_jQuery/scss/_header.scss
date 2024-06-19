@@ -1,0 +1,158 @@
+.header {
+  background-color: $brown-light;
+  height: 80px;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 182px;
+    height: 34px;
+    margin-left: 100px;
+  }
+
+  &__icons {
+    margin-right: 102px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__search {
+    margin-right: 30px;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 410px;
+  }
+
+  &__item {
+    height: 100%;
+  }
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  width: 22px;
+  height: 20px;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 9px;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  &:before {
+    top: 0px;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &.active span {
+    opacity: 0;
+  }
+
+  &.active:before {
+    top: 50%;
+    transform: rotate(-49deg) translate(0, -50%);
+  }
+
+  &.active:after {
+    bottom: 50%;
+    transform: rotate(49deg) translate(0, 50%);
+  }
+}
+
+.header {
+  @media (max-width: 1024px) {
+    &__icons {
+      margin-right: 20px;
+      svg {
+        width: 27px;
+        height: 27px;
+      }
+    }
+
+    &__logo {
+      width: 168px;
+      height: 31px;
+      margin-left: 10px;
+    }
+
+    .nav__item {
+      @include nav-text-responsive;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__icons {
+      margin: 5px 15px 0 0;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__logo {
+      width: 100px;
+      height: 19px;
+    }
+
+    &__burger {
+      display: block;
+      float: right;
+      margin-right: 15px;
+    }
+
+    &__nav {
+      display: none;
+      height: 216px;
+      width: 100%;
+      background-color: $brown-light;
+
+      &.open {
+        display: flex;
+        margin: 0;
+        position: absolute;
+        z-index: 10;
+        top: 70px;
+        left: 0;
+      }
+
+      .nav__list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

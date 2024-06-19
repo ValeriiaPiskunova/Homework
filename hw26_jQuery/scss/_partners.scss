@@ -1,0 +1,133 @@
+.partners {
+  height: 290px;
+  background: $brown-light;
+
+  &__content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    @include heading-large;
+    margin: 0;
+  }
+
+  &-slider {
+    width: 85%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+      padding-left: 0;
+      overflow: hidden;
+      svg {
+        width: 114px;
+      }
+    }
+
+    &__prev {
+      left: 40px;
+      @include partners-arrows;
+      background: url("../img/svg/prev-arrow.svg");
+
+      &:active {
+        background: url("../img/svg/prev-arrow-active.svg");
+      }
+    }
+
+    &__next {
+      right: 40px;
+      @include partners-arrows;
+      background: url("../img/svg/next-arrow.svg");
+
+      &:active {
+        background: url("../img/svg/next-arrow-active.svg");
+      }
+    }
+  }
+}
+
+.partners-dots {
+  display: flex;
+  gap: 12px;
+  bottom: 0;
+  @include positionX-center;
+  padding-left: 0;
+}
+
+.partners-dots li {
+  position: relative;
+}
+
+.partners-dots li button {
+  @include btn-invisible;
+}
+
+.partners-dots li button::before {
+  @include dots-style;
+  background: #cac2ba;
+}
+
+.partners-dots li.slick-active button::before {
+  background: $tomato-light;
+}
+
+.partners {
+  @media (max-width: 1024px) {
+    height: 225px;
+
+    &__title {
+      @include heading-large-responsive;
+    }
+
+    &-slider {
+      &__prev {
+        @include arrows-responsive;
+        top: 56%;
+        left: 10px;
+      }
+
+      &__next {
+        top: 56%;
+        right: 10px;
+        @include arrows-responsive;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 267px;
+
+    &-slider {
+      margin-top: 20px;
+      height: 95px;
+
+      &__list {
+        height: 100%;
+        margin-bottom: 0;
+      }
+
+      &__img {
+        height: 65px;
+        width: 120px;
+      }
+      &__prev {
+        display: none;
+      }
+      &__next {
+        display: none;
+      }
+    }
+    &-dots {
+      bottom: -8px;
+    }
+  }
+}

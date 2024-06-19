@@ -1,0 +1,167 @@
+.footer {
+  background-color: $brown-dark;
+  height: 350px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: 195px;
+  }
+
+  &__info {
+    height: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 150px;
+    height: 30px;
+  }
+
+  &__nav {
+    height: 130px;
+    margin-top: 35px;
+
+    &-list {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__contacts {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &-text {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 31.69px;
+      color: $brown-light;
+      margin: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    margin: 48px 0 32px 0;
+  }
+
+  &__icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    --fill: #{$brown-light};
+
+    &:hover {
+      --fill: #{$tomato-light};
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    color: $brown-light;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+  }
+}
+
+.nav-list__item {
+  @include nav-text-size;
+  color: $brown-light;
+}
+
+.footer-hover {
+  color: #f16a50;
+  cursor: pointer;
+}
+
+.footer {
+  @media (max-width: 1024px) {
+    height: 232px;
+
+    &__logo {
+      margin-top: 25px;
+    }
+
+    &__social {
+      width: 100%;
+      margin: 26px 0 20px 0;
+    }
+
+    &__icon {
+      height: 20px;
+    }
+
+    &__info {
+      margin-top: 50px;
+      flex-direction: row;
+    }
+
+    &__contacts {
+      margin-top: 34px;
+
+      &-text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.38px;
+      }
+    }
+
+    &__copyright {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 322px;
+
+    &__container {
+      height: inherit;
+      margin: 0 20px;
+    }
+    &__info {
+      margin-top: 0;
+      flex-direction: column;
+    }
+
+    &__copyright {
+      margin-top: 60px;
+    }
+
+    &__contacts {
+      margin-top: -20px;
+    }
+  }
+  @media (max-width: 300px) {
+    height: auto;
+
+    &__container {
+      flex-direction: column;
+      max-height: 335px;
+    }
+    &__contacts {
+      margin-top: 0;
+    }
+  }
+}
+
+.nav-list__item {
+  @media (max-width: 1024px) {
+    @include nav-text-responsive;
+  }
+}
