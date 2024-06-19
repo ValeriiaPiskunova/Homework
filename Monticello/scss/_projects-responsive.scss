@@ -1,0 +1,88 @@
+.projects {
+  @media (max-width: 1430px) {
+    &__picture {
+      &--img {
+        left: 6%;
+        &-reverse {
+          right: 6%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin: 100px 0;
+    &__picture {
+      &--bg {
+        width: 100%;
+        &-reverse {
+          width: 100%;
+        }
+      }
+
+      &--img {
+        left: 0;
+        &-reverse {
+          right: 0;
+          top: 50px;
+        }
+      }
+    }
+
+    &__text {
+      width: 40%;
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin: 80px 0;
+    max-height: 1600px;
+
+    &__content {
+      gap: 45px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__row {
+      gap: 20px;
+      &-reverse {
+        gap: 20px;
+        height: inherit;
+      }
+    }
+
+    &__picture {
+      width: 100%;
+      &-reverse {
+        width: 100%;
+      }
+
+      &--bg {
+        display: none;
+        &-reverse {
+          display: none;
+        }
+      }
+
+      &--img {
+        position: static;
+        &-reverse {
+          position: static;
+        }
+      }
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__btn {
+      margin: 30px 0;
+    }
+  }
+}

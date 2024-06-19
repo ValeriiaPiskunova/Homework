@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "img": "./img/news-img1.webp",
+    "heading": "SEE THE UNMATCHED BEAUTY OF THE GREAT.",
+    "text": "Free directories: directories are perfect for customers that are searching for...",
+    "photo": "./img/news-person1.webp",
+    "name": "ALJA BRUN",
+    "date": "20 Jan 2020"
+  },
+  {
+    "id": "2",
+    "img": "./img/news-img2.webp",
+    "heading": "EFFECTIVE ADVERTISING POINTERS.",
+    "text": "Having a home based business is a wonderful asset to your life...",
+    "photo": "./img/news-person2.webp",
+    "name": "DOMINIC FREEMAN",
+    "date": "13 Dec 2019"
+  },
+  {
+    "id": "3",
+    "img": "./img/news-img3.webp",
+    "heading": "HYPNOTIZE YOURSELF INTO THE GHOST.",
+    "text": "There are many things that are important to catalog design...",
+    "photo": "./img/news-person3.webp",
+    "name": "ALICE WARD",
+    "date": "30 Nov 2019"
+  },
+  {
+    "id": "4",
+    "img": "./img/gallery2.webp",
+    "heading": "EFFECTIVE ADVERTISING POINTERS.",
+    "text": "Increasing prosperity in our lives can be accomplished...",
+    "photo": "./img/news-person2.webp",
+    "name": "DOMINIC FREEMAN",
+    "date": "30 Nov 2019"
+  },
+  {
+    "id": "5",
+    "img": "./img/gallery5.webp",
+    "heading": "SEE THE UNMATCHED BEAUTY OF THE GREAT.",
+    "text": "Successful businesses have many things in common...",
+    "photo": "./img/news-person1.webp",
+    "name": "ALJA BRUN",
+    "date": "30 Nov 2019"
+  }
+]

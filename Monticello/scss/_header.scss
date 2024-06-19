@@ -1,0 +1,156 @@
+.header {
+  height: 800px;
+  position: relative;
+  background: linear-gradient(
+    243.43deg,
+    #7e5aff 16.9%,
+    #55b7ff 83.27%
+  );
+
+  &__slider {
+    @include size-full;
+
+    &-item {
+      height: auto;
+      width: 100%;
+      max-width: 1920px;
+      object-fit: cover;
+    }
+  }
+
+  &-bg {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+  }
+
+  &__content {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__top-content {
+    width: 100%;
+
+    &--container {
+      width: 100%;
+      max-width: 1170px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &.fix {
+      max-width: unset;
+      z-index: 100;
+      transition: all 0.2s ease-out;
+      background-image: linear-gradient(to top, #55b7ff, #7e5aff);
+      position: fixed;
+      top: 0;
+      padding-top: 5px;
+    }
+  }
+
+  &__title {
+    @include heading-largest;
+    margin: 0;
+    color: white;
+  }
+  &__info-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: white;
+  }
+
+  &__scroll {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../img/svg/arrow-bottom.svg");
+    border: none;
+    margin-bottom: 27px;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.3s ease-in;
+      cursor: pointer;
+      box-shadow: 2px 1px 1px rgb(223, 222, 222);
+    }
+  }
+}
+
+.nav {
+  max-width: 515px;
+  width: 100%;
+
+  &-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      font-family: Source Sans Pro;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.6px;
+      color: white;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        @include dotts-style;
+        top: 2px;
+        left: -16px;
+        margin-right: 15px;
+      }
+
+      &:hover {
+        border-bottom: 1px solid white;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+        &::before {
+          background: white;
+        }
+      }
+    }
+  }
+}
+
+.opacity {
+  opacity: 0.1 !important;
+}
+
+.header-dots {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  @include positionY-center;
+  right: 10.8%;
+  z-index: 10;
+}
+
+.header-dots li {
+  position: relative;
+}
+.header-dots li button {
+  @include btn-invisible;
+}
+.header-dots li button::before {
+  @include dotts-style;
+}
+.header-dots li.slick-active button::before {
+  background: white;
+}

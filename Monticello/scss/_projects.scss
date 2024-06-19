@@ -1,0 +1,130 @@
+.projects {
+  margin: 131px 0 150px 0;
+  height: 100%;
+  max-height: 1348px;
+
+  &__title {
+    @include heading-large;
+    text-align: center;
+    margin: 30px 0 90px 0;
+    position: relative;
+    &::before {
+      @include heading-decoration;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    height: auto;
+    flex-wrap: wrap;
+
+    &-reverse {
+      height: 527px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  &__text {
+    width: 29.8%;
+    margin: 151px 0 26px 0;
+  }
+
+  &__heading {
+    @include heading-large;
+    margin: 0 0 18px 0;
+  }
+
+  &__info {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.82px;
+  }
+
+  &__btn {
+    @include more-btn-style;
+    margin: 30px 0 60px 0;
+  }
+
+  &__location {
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20.43px;
+    color: black;
+    display: block;
+    i {
+      color: $base-color;
+      margin-right: 5px;
+    }
+  }
+  p {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.projects__picture {
+  position: relative;
+  width: 55%;
+
+  &-reverse {
+    position: relative;
+    width: 55%;
+    height: 100%;
+  }
+
+  &--bg {
+    position: absolute;
+    width: 66.5%;
+    height: 100%;
+    max-height: 470px;
+    background-color: #55b7ff;
+
+    &-reverse {
+      background-color: #7e5aff;
+      position: absolute;
+      right: 0;
+      bottom: 57px;
+      width: 66.5%;
+      height: 470px;
+    }
+  }
+
+  &--img {
+    position: absolute;
+    top: 11%;
+    left: 24%;
+    height: auto;
+    width: 100%;
+    max-width: 630px;
+    max-height: 470px;
+    object-fit: cover;
+
+    &-reverse {
+      position: absolute;
+      bottom: 0;
+      right: 24%;
+      height: auto;
+      width: 100%;
+      max-width: 630px;
+      max-height: 470px;
+      object-fit: cover;
+    }
+  }
+}

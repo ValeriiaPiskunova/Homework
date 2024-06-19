@@ -1,0 +1,59 @@
+body {
+  font-family: "Montserrat";
+  color: $base-color;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1020px;
+    height: 100%;
+  }
+  @media (max-width: 500px) {
+    max-width: 480px;
+  }
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.hover {
+  background: linear-gradient(
+    251.06deg,
+    #7e5aff -2.19%,
+    #55b7ff 103.21%
+  ) !important;
+  color: white !important;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  --opacity: 0.4;
+  --fill: white;
+  margin-right: 19px;
+  &:last-child {
+    margin-right: 0 !important;
+  }
+  &:hover {
+    --opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+  }
+
+  @media (max-width: 1024px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 420px) {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}

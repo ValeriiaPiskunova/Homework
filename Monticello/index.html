@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Monticello International Group studio is based in Stockholm. We are a young multidisciplinary team of architects and designers within various fields of architecture.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/jquery.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Monticello</title>
+</head>
+
+<body>
+    <header class="header" id="about-us">
+        <div class="header__slider">
+            <div class="header__slider-item">
+                <img data-lazy="./img/header-bg.png" class="header-bg" src="./img/header-bg.webp"
+                    alt="A modern building with a patterned white facade on a corner in an urban area.">
+            </div>
+            <div class="header__slider-item">
+                <img data-lazy="./img/slide2.jpg" class="header-bg opacity" src="./img/slide2.webp"
+                    alt="Close-up of a white building's facade featuring wavy, undulating balconies, creating a fluid, organic pattern.">
+            </div>
+            <div class="header__slider-item">
+                <img data-lazy="./img/slide3.jpg" class="header-bg opacity" src="./img/slide3.webp"
+                    alt="Geometric architectural ceiling featuring triangular white beams converging to a central point, with large windows allowing natural light to enter.">
+            </div>
+            <div class="header__slider-item">
+                <img data-lazy="./img/slide4.jpg" class="header-bg opacity" src="./img/slide4.webp"
+                    alt="Modern high-rise buildings with reflective glass facades, showcasing their geometric architecture.">
+            </div>
+            <div class="header__slider-item">
+                <img data-lazy="./img/slide5.jpg" class="header-bg" src="./img/slide5.webp"
+                    alt="Geometric exterior of a modern building, featuring a grid of diamond-shaped patterns and curved apertures.">
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="header__top-content">
+                <div class="header__top-content--container">
+                    <img class="header__logo" src="./img/svg/logo.svg"
+                        alt="Monticello International Group logo with a stylized triangular emblem on a blue background.">
+                    <nav class="header__nav nav">
+                        <ul class="nav-list">
+                            <li><a href="#about-us" class="nav-list__item">ABOUT US</a></li>
+                            <li><a href="#projects" class="nav-list__item">PROJECTS</a></li>
+                            <li><a href="#news" class="nav-list__item">NEWS</a></li>
+                            <li><a href="#contacts" class="nav-list__item">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__social">
+                        <svg class="social-icon">
+                            <use xlink:href="./img/svg/icons.svg#facebook"></use>
+                        </svg>
+                        <svg class="social-icon">
+                            <use xlink:href="./img/svg/icons.svg#twitter"></use>
+                        </svg>
+                        <svg class="social-icon">
+                            <use xlink:href="./img/svg/icons.svg#ig"></use>
+                        </svg>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="header__title">SIMPLE & MODERN</h1>
+                <p class="header__info-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <button class="header__scroll"></button>
+        </div>
+    </header>
+    <main>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="projects__title">WHAT WE DO</h2>
+                <div class="projects__content">
+                    <div class="projects__row">
+                        <div class="projects__picture">
+                            <div class="projects__picture--bg"></div>
+                            <img class="projects__picture--img" src="img/projects-light.webp"
+                                alt="A modern architectural structure with a grid-like pattern of circular openings on a curved surface.">
+                        </div>
+                        <div class="projects__text">
+                            <span class="projects__info">ONE WORLD</span>
+                            <h2 class="projects__heading">TRADE CENTER</h2>
+                            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                                The
+                                truth
+                                is,
+                                our thoughts are
+                                very powerful.</p>
+                            <button class="projects__btn button">MORE DETAILS</button>
+                            <span class="projects__location"><i class="fa-solid fa-location-dot"></i>
+                                New York City, United States - 1776 feet</span>
+                        </div>
+                    </div>
+                    <div class="projects__row-reverse">
+                        <div class="projects__picture-reverse">
+                            <div class="projects__picture--bg-reverse"></div>
+                            <img class="projects__picture--img-reverse" src="img/projects-dark.webp"
+                                alt="Rectangular brick building with many windows and a cylindrical water tower on the roof.">
+                        </div>
+                        <div class="projects__text">
+                            <span class="projects__info">INTERNATIONAL</span>
+                            <h2 class="projects__heading">COMMERCE CENTRE</h2>
+                            <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of
+                                recognition
+                                and
+                                how
+                                a digital
+                                advertising network may help.</p>
+                            <button class="projects__btn button">MORE DETAILS</button>
+                            <span class="projects__location"> <i class="fa-solid fa-location-dot"></i>
+                                Hong Kong - 1588 feet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="news">
+            <img data-lazy="../img/news-bg.png" class="news-bg" src="./img/news-bg.webp"
+                alt="Illustration of a city skyline with various modern buildings.">
+            <div class="container">
+                <h2 class="news__title">LATEST NEWS</h2>
+                <div class="news__container">
+                    <div class="news-slider">
+                        <button class="news-slider__prev slider-arrow"></button>
+                        <ul class="news-slider__list"></ul>
+                        <button class="news-slider__next slider-arrow"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__content">
+                    <h2 class="gallery__title">GALLERY</h2>
+                    <div class="gallery__pictures">
+                        <div class="gallery__pictures--big">
+                            <img class="gallery__img--big" src="img/gallery1.webp"
+                                alt="Modern, curved glass and steel building in the background against a clear blue sky.">
+                            <svg class="gallery__icon">
+                                <use xlink:href="./img/svg/icons.svg#zoom-in"></use>
+                            </svg>
+                        </div>
+                        <div class="gallery__pictures--small">
+                            <div class="gallery__pictures--row">
+                                <img class="gallery__img" src="img/gallery2.webp"
+                                    alt="Tall, modern high-rise building with white and gray exterior.">
+                                <img class="gallery__img" src="img/gallery3.webp"
+                                    alt="A brick residential building with multiple windows.">
+                            </div>
+                            <div class="gallery__pictures--row">
+                                <img class="gallery__img" src="img/gallery4.webp"
+                                    alt="Tall, curved building with numerous rectangular windows.">
+                                <img class="gallery__img" src="img/gallery5.webp"
+                                    alt="A modern building with a patterned white facade on a corner in an urban area.">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="gallery__btn button">SEE MORE</button>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div id="map" class="contacts__map">
+            </div>
+            <div class="contacts__info">
+                <h2 class="contacts__title">GET IN TOUCH</h2>
+                <div class="contacts__content-contairer">
+                    <div class="contacts__info-box">
+                        <p> <i class="fa-solid fa-location-dot"></i> 91 Nolan Extensions Suite 670</p>
+                        <p> <i class="fa-solid fa-phone"></i> +001 356-868-2454</p>
+                        <p><i class="fa-solid fa-inbox"></i> montichello@service.com</p>
+                        <p><i class="fa-regular fa-clock"></i> From 07:05AM to 19:30PM </p>
+                    </div>
+                    <div class="contacts__form-box">
+                        <form action="#" class="contacts__form">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <button type="submit" class="contacts__btn">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer-bg" src="./img/footer-bg.webp"
+            alt="An image of a modern multi-story building with glass windows, curved design.">
+        <div class="footer__content">
+            <div class="footer__left">
+                <img class="footer__logo" src="./img/svg/Logo.svg"
+                    alt="Monticello International Group logo with a stylized triangular emblem on a blue background.">
+                <p class="footer__copy">Copyrights © 2020 Montichello</p>
+            </div>
+            <div class="footer__social">
+                <svg class="social-icon">
+                    <use xlink:href="./img/svg/icons.svg#facebook"></use>
+                </svg>
+                <svg class="social-icon">
+                    <use xlink:href="./img/svg/icons.svg#twitter"></use>
+                </svg>
+                <svg class="social-icon">
+                    <use xlink:href="./img/svg/icons.svg#ig"></use>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

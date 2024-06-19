@@ -1,0 +1,101 @@
+@mixin heading-largest {
+  font-family: Montserrat;
+  font-size: calc(34px + 38 * ((100vw - 320px) / 1280));
+  font-weight: 700;
+  line-height: 97.52px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+@mixin heading-large {
+  font-family: Montserrat;
+  font-size: calc(24px + 16 * ((100vw - 320px) / 1280));
+  font-weight: 700;
+  line-height: 53.64px;
+}
+
+@mixin heading-decoration {
+  content: "";
+  border-top: 1px solid $base-color;
+  width: 100px;
+  @include positionX-center;
+  bottom: 85px;
+  @media (max-width: 500px) {
+    bottom: 60px;
+  }
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin positionX-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin positionY-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin size-full {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin more-btn-style {
+  width: 190px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid $base-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+@mixin submit-btn-style {
+  width: 140px;
+  height: 50px;
+  border: 1px solid $base-color;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+@mixin news-arrows {
+  width: 40px;
+  height: 40px;
+  @include positionY-center;
+  cursor: pointer;
+  border: none;
+}
+
+@mixin btn-invisible {
+  color: transparent;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+@mixin dotts-style {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+}

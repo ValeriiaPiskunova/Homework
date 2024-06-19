@@ -1,0 +1,126 @@
+.contacts {
+  height: 700px;
+  position: relative;
+
+  &__info {
+    @include size-full;
+    max-width: 770px;
+    max-height: 450px;
+    box-shadow: 0px -4px 30px 0 rgba(133, 133, 133, 0.2);
+    background-color: white;
+    position: absolute;
+    top: 57.5%;
+    @include positionX-center;
+    z-index: 10;
+  }
+
+  &__title {
+    @include heading-large;
+    text-align: center;
+    margin: 90px 0 0 0;
+    position: relative;
+    &::before {
+      @include heading-decoration;
+    }
+  }
+
+  &__content-contairer {
+    margin: 42px 60px 68px 60px;
+    display: flex;
+    gap: 54px;
+    max-height: 196px;
+    height: 100%;
+  }
+
+  &__info-box {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 0;
+      i {
+        color: #7e5aff;
+      }
+    }
+  }
+
+  &__form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__form {
+    height: 100%;
+    input {
+      @include size-full;
+      max-height: 41px;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      margin-bottom: 29px;
+      padding: 0;
+      color: black;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $base-color;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &__btn {
+    @include submit-btn-style;
+    margin-top: 3px;
+    float: right;
+
+    &:hover {
+      background: #7e5aff;
+      color: white;
+    }
+
+    &:active {
+      background: #55b7ff;
+    }
+  }
+}
+
+#map {
+  z-index: 10;
+  height: 700px;
+  width: 100%;
+}
+
+.contacts {
+  @media (max-width: 500px) {
+    &__title {
+      margin: 50px 0 0 0;
+    }
+
+    &__info {
+      max-height: 570px;
+      max-width: 497px;
+      top: 63%;
+    }
+
+    &__content-contairer {
+      margin: 32px 50px;
+      flex-direction: column;
+      gap: 30px;
+      max-height: 400px;
+    }
+
+    &__info-box {
+      width: 74%;
+      margin: 0 auto;
+    }
+
+    &__form-box {
+      width: 100%;
+    }
+  }
+}
